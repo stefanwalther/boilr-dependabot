@@ -1,0 +1,15 @@
+{
+  "name": "boilr-dependabot",
+  "version": "0.1.0",
+  "author": "Stefan Walther <swr.nixda@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanwalther/boilr-dependabot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stefanwalther/boilr-dependabot/issues"
+  },
+  "homepage": "https://github.com/stefanwalther/boilr-dependabot#readme",
+  "description": "Create a default dependabot config to be used in GitHub actions."
+}

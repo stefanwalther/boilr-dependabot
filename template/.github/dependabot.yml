@@ -1,0 +1,47 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: 'sunday'
+    time: "04:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: 'sunday'
+    time: "04:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: docker
+  directory: "/"
+  file: "Dockerfile.build"
+  schedule:
+    interval: weekly
+    day: 'sunday'
+    time: "04:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: docker
+  directory: "/"
+  file: "docker-compose.yaml"
+  schedule:
+    interval: weekly
+    day: 'sunday'
+    time: "04:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: docker
+  directory: "/"
+  file: "docker-compose.test.yaml"
+  schedule:
+    interval: weekly
+    day: 'sunday'
+    time: "04:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: 'sunday'
+    time: "04:00"
+  open-pull-requests-limit: 99
