@@ -5,21 +5,6 @@ help:														## Show this help.
 	@echo ''
 .PHONY: help
 
-gen-readme: gen-output					## Generate README.md (using docker-verb)
-	rm -rf ./README.md && docker run --rm -v ${PWD}:/opt/verb stefanwalther/verb
-.PHONY: gen-readme
-
-gen-output: reg      						## Generate the sample output
-	mkdir -p ./sample ; \
-	cd ./sample; \
-	boilr template use dependabot .; \
-	tree -a > ./../docs/boilr-output.md; \
-	cd ..; \
-	rm -rf ./sample;
-.PHONY: gen-output
-
 reg:														## Register the current template locally
 	boilr template save $(PWD) dependabot -f
 .PHONY: reg
-
-
